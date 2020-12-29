@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style media="screen">
+      body {
+        font-family: sans-serif;
+      }
+      input,
+      button {
+        padding: 7px;
+        height: 40px;
+      }
+
+      fieldset {
+        width: 400px;
+        margin: 50px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Local Storage</h2>
+    <fieldset>
+      <legend>Insert Data</legend>
+      <input type="text" id="inpKey" placeholder="Enter key..." />
+      <input type="text" id="inpValue" placeholder="Enter value..." />
+      <button id="submitData">Insert</button>
+    </fieldset>
+    <fieldset>
+      <legend>Storage</legend>
+      <div id="output"></div>
+    </fieldset>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
