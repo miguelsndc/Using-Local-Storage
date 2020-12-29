@@ -2,6 +2,7 @@ const inpKey = document.getElementById("inpKey");
 const inpValue = document.getElementById("inpValue");
 const insertBtn = document.getElementById("submitData");
 const output = document.getElementById("output");
+const clearBtn = document.getElementById("clear");
 
 insertBtn.onclick = function () {
   const key = inpKey.value;
@@ -13,9 +14,13 @@ insertBtn.onclick = function () {
   }
 };
 
-for (let i = 0; i < localStorage.length; ++i) {
-  const key = localStorage.key(i);
-  const value = localStorage.getItem(key);
+clearBtn.onclick = function () {
+  localStorage.clear();
+  location.reload();
+};
 
+const entries = Object.entries(localStorage);
+
+for (const [key, value] of entries) {
   output.innerHTML += `${key}: ${value}<br>`;
 }
