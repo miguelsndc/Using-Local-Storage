@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+input,
+button {
+  padding: 7px;
+  height: 40px;
+}
+
+fieldset {
+  width: 450px;
+  margin: 50px 0px;
+}
