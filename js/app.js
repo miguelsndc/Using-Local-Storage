@@ -24,3 +24,11 @@ const entries = Object.entries(localStorage);
 for (const [key, value] of entries) {
   output.innerHTML += `${key}: ${value}<br>`;
 }
+
+// Same syntax for session storage, the difference is that the session storage object is cleared once the window reloads
+
+sessionStorage.setItem("name", "Miguel");
+
+const name = sessionStorage.getItem("name");
+
+const key = sessionStorage.key(name);
